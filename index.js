@@ -1,17 +1,26 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  const savedNumber = {};
+  for (const number of array) {
+    const complement = target - number;
+    if (savedNumber[complement]) return true;
+    savedNumber[number] = true;
+  }
+  return false;
 }
 
 /* 
-  Write the Big O time complexity of your function here
+  Big O Notation: O(n)
 */
 
 /* 
-  Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
+  Pseudocode:
+  1. Initialize an empty object `savedNumber` to store the numbers encountered.
+  2. Iterate through each number in the array.
+    - Calculate the complement by subtracting the current number from the target.
+    - Check if the complement exists as a key in the `savedNumber` object.
+      - If it does, a pair of numbers adding up to the target has been found. Return `true`.
+    - Add the current number as a key to the `savedNumber` object.
+  3. If no pair is found after iterating through the entire array, return `false`.
 */
 
 // You can run `node index.js` to view these console logs
