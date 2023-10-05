@@ -1,4 +1,4 @@
-function hasTargetSum(array, target) {
+ function hasTargetSum(array, target) {
   const savedNumber = {};
   for (const number of array) {
     const complement = target - number;
@@ -20,8 +20,22 @@ function hasTargetSum(array, target) {
     - Check if the complement exists as a key in the `savedNumber` object.
       - If it does, a pair of numbers adding up to the target has been found. Return `true`.
     - Add the current number as a key to the `savedNumber` object.
-  3. If no pair is found after iterating through the entire array, return `false`.
+  3. If no pair is found after iterating through the entire array, return `false`.\
+
+
+
 */
+//a funtion that has and array of intgeres(number). 
+//The array consinst of a target number.
+//the fuction should return true if any pair number adds up to the the target number
+
+
+function targetSum {
+  const numbers [1, 2, 3, 4, 5, 6] 
+  const targetNumber = 10
+  const targetSum = (number, targetNumber)
+}
+console.log(result);
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {

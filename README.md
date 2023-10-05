@@ -20,7 +20,11 @@ original problem statement:
 >
 > - an `array` of integers
 > - a `target` integer
->
+>```
+a funtion that has and array of intgeres(number). 
+The array consinst of a target number.
+the fuction should return true if any pair number adds up to the the target number
+```
 > The function should return true if any pair of numbers in the array adds up to
 > the target number.
 
