@@ -35,7 +35,7 @@ function targetSum {
   const targetNumber = 10
   const targetSum = (number, targetNumber)
 }
-console.log(result);
+console.log(result); 
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
